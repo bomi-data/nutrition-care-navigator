@@ -47,59 +47,47 @@
 
 ## 서비스 흐름
 
-```text
-사용자 상황 입력
-        ↓
-지역 · 생활조건 확인
-        ↓
-이용 가능한 서비스 후보 탐색
-        ↓
-조건에 따른 추천 및 우선순위화
-        ↓
-관련 서비스 정보 및 근거 확인
-        ↓
+사용자 상황 입력  
+↓  
+지역 · 생활조건 확인  
+↓  
+이용 가능한 서비스 후보 탐색  
+↓  
+조건에 따른 추천 및 우선순위화  
+↓  
+관련 서비스 정보 및 근거 확인  
+↓  
 지역 영양·돌봄 서비스 안내
 
----
-
 ## 구현 구조
+
+```text
 nutrition-care-navigator/
-│
 ├── app/
 │   └── streamlit_app.py
-│
 ├── src/
 │   ├── data/
 │   ├── rag/
 │   ├── recommender/
 │   ├── streamlit_ui/
 │   └── utils/
-│
 ├── data/
 │   ├── raw/
 │   ├── processed/
 │   └── sources/
-│
 ├── tests/
-│
 ├── docs/
-│   └── contest-proposal.pdf
-│
+├── contest-proposal.pdf
 ├── requirements.txt
 └── README.md
+```
 
 ## 사용 기술
-Python
-데이터 수집·정리와 서비스 추천 로직 구현
 
-Streamlit
-사용자 입력 및 추천 결과를 확인할 수 있는 MVP 구현
-
-RAG
-공식 자료를 검색하고 서비스 안내에 필요한 근거를 활용하기 위한 검색 구조 구현
-
-Vector Store / Embedding
-관련 서비스 문서 검색 및 RAG 파이프라인 구성
-
-pytest
-추천 로직과 RAG 등 주요 기능 검증
+| 기술 | 활용 |
+| --- | --- |
+| **Python** | 데이터 수집·전처리 및 서비스 추천 로직 구현 |
+| **Streamlit** | 사용자 입력과 추천 결과를 확인할 수 있는 웹 UI 구현 |
+| **RAG** | 공식 자료를 기반으로 관련 서비스 정보와 근거 검색 |
+| **Vector Store / Embedding** | 서비스 문서 검색 및 RAG 검색 구조 구성 |
+| **pytest** | 추천 로직과 RAG 등 주요 기능 테스트 및 검증 |
