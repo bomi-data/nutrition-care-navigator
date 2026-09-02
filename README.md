@@ -59,6 +59,8 @@
 ↓  
 지역 영양·돌봄 서비스 안내
 
+---
+
 ## 구현 구조
 
 ```text
@@ -82,6 +84,8 @@ nutrition-care-navigator/
 └── README.md
 ```
 
+---
+
 ## 사용 기술
 
 | 기술 | 활용 |
@@ -91,3 +95,12 @@ nutrition-care-navigator/
 | **RAG** | 공식 자료를 기반으로 관련 서비스 정보와 근거 검색 |
 | **Vector Store / Embedding** | 서비스 문서 검색 및 RAG 검색 구조 구성 |
 | **pytest** | 추천 로직과 RAG 등 주요 기능 테스트 및 검증 |
+
+---
+
+## 공모전 제안서
+
+서비스를 기획하게 된 배경과 문제 정의, 서비스 구성,  
+실제 Streamlit 구현 화면과 활용 방안은 공모전 제안서에 정리했습니다.
+
+📄 **[공모전 제안서 보기](contest-proposal.pdf)**
