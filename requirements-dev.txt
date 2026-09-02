@@ -1,0 +1,5 @@
+# Dev/test-only dependencies for the rule-based recommender engine (src/recommender).
+# The engine itself has zero runtime dependencies beyond the Python standard
+# library (see docs/recommendation_engine_v1_report.md for why pandas was
+# intentionally not used).
+pytest

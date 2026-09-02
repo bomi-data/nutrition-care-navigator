@@ -1,0 +1,16 @@
+# 예정 기술 스택
+streamlit
+pandas
+python-dotenv
+requests
+
+# RAG Retrieval v1 (docs/rag_retrieval_v1_report.md) -- local only, no API key
+sentence-transformers
+faiss-cpu
+numpy
+
+# RAG Generation v1 (docs/rag_generation_v1_report.md) -- Claude API, needs ANTHROPIC_API_KEY
+anthropic
+
+# 향후 단계에서 검토 -- 이번 단계 미사용
+# langchain
